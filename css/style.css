@@ -1,0 +1,206 @@
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rowdies-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    --color-primary-white: #FFFFFF;
+    --color-primary-yellow: #FF9F0E;
+    --color-primary-dark: #181817;
+
+    --color-secondary-yellow: #FCB62A;
+    --color-secondary-light: #FFFAF3;
+    --color-secondary-light-blue: #F1F3FF;
+    --color-secondary-blue: #839AA9;
+    --color-secondary-light-gray: #F9F9FF;
+    --color-secondary-purple: #D9A6FF;
+}
+
+*,
+::after,
+::before {
+   box-sizing: border-box;
+}
+
+body {
+   color: var(--color-primary-dark);
+   background-color: var(--color-primary-light);
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.5;
+   margin: 0;
+
+   /* @media screen and (min-width: $bp-tablet) {
+     font-size: 18px;
+     font-weight: 400;
+   } */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+a {
+   display: inline-block;
+}
+
+address {
+   font-style: normal;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+  .container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+ }
+
+
+/* header */
+
+.header {
+  /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 16px; */
+
+    /* @media screen and (min-width: $bp-desktop) {
+      padding-top: 32px;
+   } */
+
+   padding-top: 32px;
+}
+
+    .header__container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+   }
+
+   .header__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+ }
+
+ .header__menu {
+  /* display: none;
+
+@media screen and (min-width: $bp-desktop) {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+} */
+display: flex;
+gap: 64px;
+flex-grow: 1;
+justify-content: center;
+
+}
+
+.header__button {
+  display: block;
+}
+
+.header__burger {
+  display: none;
+}
+
+.link {
+  color: var(--color-secondary-blue);
+  text-decoration: none;
+  transition: color 0.3s;
+
+}
+
+.link:hover {
+  color: var(--color-secondary-yellow);
+}
+ 
+.button {
+  display: block;
+   padding: 16px 32px;
+   color: var(--color-primary-white);
+   font-weight: 600;
+   background-color: var(--color-primary-yellow);
+   border: transparent;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: var(--color-secondary-yellow);
+   color: var(--color-primary-white);
+}
+
+/* hero */
+
+.hero-section {
+  padding: 124px 0;
+}
+
+.hero-section__content {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-section__component {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 635px;
+  height: 363px;
+  line-height: 1.5;
+}
+
+.hero-section__title {
+  font-family: "Rowdies", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.hero-section__text {
+  width: 499px;
+  height: 145px;
+}
+
+.hero-section__item {
+  font-size: 20px;
+}
